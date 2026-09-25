@@ -95,8 +95,8 @@ export default function About() {
             <div className="lg:col-span-5 relative group">
               <div className="relative overflow-hidden rounded-3xl shadow-lg border border-olive/10">
                 <img
-                  src="/img/very.png"
-                  alt="Curious exotic reptile"
+                  src="/img/about_story.jpg"
+                  alt="Exotic reptile chameleon in natural bioactive terrarium"
                   className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
