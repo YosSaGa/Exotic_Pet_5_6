@@ -294,7 +294,7 @@ export default function CareHabitat() {
         <div className="mb-12 relative group">
           <div className="rounded-3xl overflow-hidden shadow-md border border-olive/12">
             <img
-              src="/img/small.png"
+              src="/img/care_habitat_vivarium.jpg"
               alt="Naturalistic vivarium with tropical plant micro-climate"
               className="w-full h-56 sm:h-72 md:h-80 object-cover group-hover:scale-102 transition-transform duration-700"
             />

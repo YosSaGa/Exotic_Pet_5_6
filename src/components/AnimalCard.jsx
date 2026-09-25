@@ -45,20 +45,33 @@ export default function AnimalCard({ animal }) {
       onClick={() => setExpanded(!expanded)}
     >
       <div>
-        {/* Card header with natural gradient & interactive floating emoji */}
-        <div
-          className={`relative bg-gradient-to-b ${bgGradient} flex items-center justify-center h-48 overflow-hidden select-none`}
-        >
-          <motion.div
-            whileHover={{ scale: 1.2, rotate: [0, -6, 6, 0] }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}
-            className="text-7xl filter drop-shadow-md cursor-grab active:cursor-grabbing"
-          >
-            {animal.image}
-          </motion.div>
-          {/* Subtle category tag pill */}
-          <span className={`absolute top-3.5 right-3.5 text-xs px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-sm text-olive shadow-sm border border-olive/10 ${isTh ? "font-prompt font-semibold" : "font-bebas tracking-wider"}`}>
-            {displayCategory}
+        {/* Card header with real high-resolution photo or natural gradient fallback */}
+        <div className="relative h-52 w-full overflow-hidden bg-olive-surface select-none">
+          {animal.image && (animal.image.startsWith("http") || animal.image.startsWith("/")) ? (
+            <>
+              <motion.img
+                src={animal.image}
+                alt={displayName}
+                className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-600 ease-out"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+            </>
+          ) : (
+            <div className={`relative bg-gradient-to-b ${bgGradient} flex items-center justify-center h-full`}>
+              <motion.div
+                whileHover={{ scale: 1.2, rotate: [0, -6, 6, 0] }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                className="text-7xl filter drop-shadow-md cursor-grab active:cursor-grabbing"
+              >
+                {animal.emoji || animal.image}
+              </motion.div>
+            </div>
+          )}
+          {/* Category tag pill */}
+          <span className={`absolute top-3.5 right-3.5 text-xs px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-olive shadow-sm border border-olive/15 z-10 flex items-center gap-1 ${isTh ? "font-prompt font-semibold" : "font-bebas tracking-wider"}`}>
+            {animal.emoji && <span>{animal.emoji}</span>}
+            <span>{displayCategory}</span>
           </span>
         </div>
 

@@ -96,6 +96,20 @@ export default function Contact() {
               </p>
             </div>
 
+            {/* Friendly Keeper Support Visual */}
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-olive/10 h-44 sm:h-48 group">
+              <img
+                src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?auto=format&fit=crop&w=800&q=80"
+                alt="Gentle exotic pet handling"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute bottom-3 left-3 text-white text-xs font-semibold px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20">
+                🌿 {isTh ? "ให้คำปรึกษาด้วยใจรักในสิ่งมีชีวิต" : "Expert Exotic Care Guidance"}
+              </div>
+            </div>
+
             {/* Direct Email */}
             <div className="flex items-start gap-4 p-4 rounded-2xl bg-olive-surface/70 border border-olive/10">
               <div className="w-10 h-10 rounded-xl bg-olive text-white flex items-center justify-center shrink-0">

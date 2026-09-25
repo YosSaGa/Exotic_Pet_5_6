@@ -5,7 +5,7 @@ const blogPosts = [
     category: "ETHICS & TRENDS",
     categoryTh: "จริยธรรม & กระแส",
     image:
-      "https://i.guim.co.uk/img/media/fb134242d1476718ac3de11bc466e0b2016fdb3b/665_0_5600_4480/master/5600.jpg?width=1900&dpr=2&s=none&crop=none",
+      "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1200&q=80",
     date: "JUL 13, 2025",
     dateTh: "13 ก.ค. 2025",
     readTime: "5 min read",
@@ -41,7 +41,7 @@ const blogPosts = [
     category: "BEHAVIOR",
     categoryTh: "พฤติกรรมสัตว์",
     image:
-      "https://s.yimg.com/ny/api/res/1.2/6t9aXaj5ldz9XDWgAt6erQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/aol_ny_post_us_news_articles_123/601bfc4a3c1614851fe26d3f27cd3644",
+      "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?auto=format&fit=crop&w=1200&q=80",
     date: "MAY 4, 2025",
     dateTh: "4 พ.ค. 2025",
     readTime: "4 min read",
@@ -69,7 +69,7 @@ const blogPosts = [
     category: "POLICY & LAW",
     categoryTh: "กฎหมาย & นโยบาย",
     image:
-      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1PhKIZepUJVTsGDIkPcoRA_G0fwfT13jwpZtL7OIXsRN0iKxZ",
+      "https://images.unsplash.com/photo-1531386151447-fd76ad50012f?auto=format&fit=crop&w=1200&q=80",
     date: "MAY 4, 2025",
     dateTh: "4 พ.ค. 2025",
     readTime: "6 min read",
@@ -97,7 +97,7 @@ const blogPosts = [
     category: "CONSERVATION",
     categoryTh: "การอนุรักษ์",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzi_o9SMY1FpABzncJoNc6X47-FUPtbR2jTrSjyslJL3SI9B2t",
+      "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1200&q=80",
     date: "JUN 17, 2025",
     dateTh: "17 มิ.ย. 2025",
     readTime: "4 min read",

@@ -356,7 +356,16 @@ export default function Home() {
 
       {/* Nature Care Callout Banner */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-olive to-olive-dark text-white p-8 md:p-14 shadow-lg">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-olive to-olive-dark text-white p-8 md:p-14 shadow-xl">
+          {/* High-resolution naturalistic terrarium background image */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1600&q=80"
+              alt="Exotic rainforest canopy backdrop"
+              className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+              loading="lazy"
+            />
+          </div>
           <div className="relative z-10 max-w-2xl">
             <span className={`inline-block text-xs px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white/90 mb-4 ${isTh ? "font-prompt font-semibold" : "font-bebas tracking-widest"}`}>
               {t.home.bannerBadge}
